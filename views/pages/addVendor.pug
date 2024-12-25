@@ -1,0 +1,26 @@
+html
+	head
+		title Add Vendor
+
+	body
+	
+		include ../partials/header
+		h2 Add Vendor 
+
+		div#main
+			h4 Enter the new vendor info
+			p Name: 
+				input(type="textbox" id="name" name="name")
+
+			p Delivery Fee: 
+				input(type="textbox" id="deliveryFee" name="deliveryFee")
+			p Minimum Order: 
+				input(type="textbox" id="minOrder" name="minOrder")
+
+			button(type="button" id="submit") Add Vendor
+			script(src="/addVendor.js")
+
+			br
+			br
+
+		include ../partials/footer
