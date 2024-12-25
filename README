@@ -1,7 +1,4 @@
-    Program:    COMP 2406 Assignment #3
-     Author:    Umair Butt 
-         ID:    101220985
-       Date:    2022-15-3
+    Author:    Umair Butt 
 
     Purpose:   This program develops a server capable of managing vendor data. The server is 	
 	       responsible for storing vendor data for any number of vendors. The server also 
@@ -14,10 +11,3 @@ Compilation:   cd "Downloads"
 
   Launching:   node server.js
 	       http://localhost:3000 
-
-      Notes:   5d and 5e are incomplete :(
-	      
-
-
-      
-
