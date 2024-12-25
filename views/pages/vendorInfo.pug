@@ -1,0 +1,31 @@
+html
+	head
+		title Vendor Info
+body
+	include ../partials/header
+
+	br
+	label(type="text" id="id" name="id") #{vendor.id}
+	h2 #{vendor.name}
+	h4 Delivery Fee: $#{vendor.delivery_fee}
+	h4 Minimum Order: $#{vendor.min_order}
+
+	p Name: 
+		input(type="textbox" id="name" name="name")
+	p Delivery Fee: 
+		input(type="textbox" id="deliveryFee" name="deliveryFee")
+	p Minimum Order: 
+		input(type="textbox" id="minOrder" name="minOrder")
+	p Add Category: 
+		input(type="textbox" id="addCategory" name="addCategory") 
+	button(type="button" id="addsCategory") Add Category
+	br
+	br
+	button(type="button" id="save") Save
+	script(src="/updateVendor.js")
+
+	each categories, category in vendor.supplies 
+		p ________________________________________________________________________________________________
+		h4 #{category}:
+			each item in categories
+				h5 - #{item.name}: #{item.description} (Price: $#{item.price} | Stock: #{item.stock})
