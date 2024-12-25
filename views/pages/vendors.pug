@@ -1,0 +1,12 @@
+html
+	head
+		title Vendors
+body
+	include ../partials/header
+	h2 Vendors 
+
+	each vendor in vendors
+			a(href="/vendors/" + vendor.id) #{vendor.name}
+			br
+	br
+	include ../partials/footer
