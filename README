@@ -5,9 +5,7 @@
 	       provides functionality to allow a user to add new vendors and modify the information/
 	       supplies of vendors currently stored on the server
 
-Compilation:   cd "Downloads"
-	       cd "UmairButt-a3"
-	       npm install
+Compilation:   npm install
 
   Launching:   node server.js
 	       http://localhost:3000 
